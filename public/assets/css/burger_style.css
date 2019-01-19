@@ -1,3 +1,43 @@
 body {
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.uneaten {
+    float: left;
+    width: 350px;
+}
+
+.eaten {
+    float: right;
+    width: 350px;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+
+ul {
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ebebeb;
+    height: 50px;
+    border: 1px solid #fff;
+}
+
+li > p {
+    width: 100%;
+    line-height: 3;
+    margin-left: 20px;
+}
+
+li > button {
+    position: relative;
+    bottom: 59px;
+    right: 7px;
 }

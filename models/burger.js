@@ -9,8 +9,8 @@ var db = {
     insertBurger : function(userinput) {
         orm.insertOne("burgers",userinput)
     },
-    updateBurger : function() {
-        orm.updateOne(burgername,"devoured","burgers")
+    updateBurger : function(id) {
+        orm.updateOne("burgers",id)
     }
 }
 
