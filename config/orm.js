@@ -8,8 +8,12 @@ var orm = {
         cb(result)
       });
     },
-    insertOne: function(whatToInsert,devoured,table) {
-
+    insertOne: function(table,whatToInsert,cb) {
+      var queryString = "INSERT INTO ?? (burger_name, devoured) VALUES (?,false)";
+      connection.query(queryString, [table,whatToInsert], function(err, result) {
+        if (err) throw err;
+        console.log(result)
+      });
     },
     updateOne: function(whatToUpdate,devoured,table) {
         

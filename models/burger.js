@@ -6,8 +6,8 @@ var db = {
             cb(result)
         })
     },
-    insertBurger : function() {
-        orm.insertOne(burgername,"devoured","burgers")
+    insertBurger : function(userinput) {
+        orm.insertOne("burgers",userinput)
     },
     updateBurger : function() {
         orm.updateOne(burgername,"devoured","burgers")
