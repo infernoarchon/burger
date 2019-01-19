@@ -1,5 +1,6 @@
 # Burger App
 ![burger app](https://www.alanchen.com/wp-content/uploads/2019/01/burgerapp.png)
+
 This is a node, express, and handlebars application that allows users to add a burger and then devour it. 
 
 ## Setup
