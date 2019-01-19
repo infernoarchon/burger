@@ -15,7 +15,9 @@ module.exports = function(app) {
         })
     });
     app.post("/api/burgers", function(req, res) {
+        if(req.body.burger_name){
         db.insertBurger(req.body.burger_name)
+        }
         res.end()
       });
     app.put("/api/burgers/:id", function(req,res) {
